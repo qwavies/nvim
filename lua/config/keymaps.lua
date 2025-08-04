@@ -9,6 +9,9 @@ vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { des
 vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Telescope find references" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
 
+-- NeoTree mappings
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
+
 -- move chunks of text up/down within the file
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "move text down by chunk" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "move text up by chunk" })
@@ -24,11 +27,6 @@ vim.keymap.set("n", "{", "{zz", { desc = "jump forwards by paragraph" })
 
 -- <leader>p to paste without overwriting current buffer
 vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "paste without overwriting current buffer" })
-
--- <leader>y to copy to system clipboard
--- vim.keymap.set("n", "<leader>y", "\"+y", { desc = "" })
--- vim.keymap.set("v", "<leader>y", "\"+y", { desc = "" })
--- vim.keymap.set("n", "<leader>Y", "\"+Y", { desc = "" })
 
 -- replaces the currently selected word in the entire file
 vim.keymap.set(
