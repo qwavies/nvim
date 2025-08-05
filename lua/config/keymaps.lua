@@ -8,6 +8,7 @@
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Telescope find references" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fw", require("telescope.builtin").buffers, { desc = "Telescope find buffer" })
 
 -- NeoTree mappings
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
