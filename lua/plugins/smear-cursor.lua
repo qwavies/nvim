@@ -9,7 +9,8 @@ return {
       never_draw_over_target = true,
 
       smear_insert_mode = false,
-      min_vertical_distance_smear = 9, -- doesnt work??
+      min_vertical_distance_smear = 2,
+      min_horizontal_distance_smear = 2,
 
       time_interval = 17, -- ms
       stiffness = 0.9,
