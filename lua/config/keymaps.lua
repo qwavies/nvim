@@ -9,6 +9,7 @@ vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { des
 vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Telescope find references" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fw", require("telescope.builtin").buffers, { desc = "Telescope find buffer" })
+vim.keymap.set("n", "<leader>fn", "<cmd>Telescope noice<CR>", { desc = "Telescope browse notifications" })
 
 -- NeoTree mappings
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
@@ -43,3 +44,5 @@ vim.keymap.set("n", "Q", "<nop>", { desc = "" })
 
 -- exit insert mode using "jk"
 -- vim.keymap.set("i", "jk", "<ESC>", { desc = "exit insert mode" })
+
+-- TODO: Add smart backspace that removes all whitespace behind it (like in intellij)

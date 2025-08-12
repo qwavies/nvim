@@ -22,6 +22,7 @@ vim.opt.softtabstop = tab_size
 
 -- case insensitive search with "/"
 vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- disables annoying swap
 vim.opt.swapfile = false
