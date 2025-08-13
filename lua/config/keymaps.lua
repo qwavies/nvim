@@ -5,12 +5,13 @@
 -- vim.g.mapleader = " "
 
 -- Telescope mappings
-vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "Telescope find files" })
-vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Telescope find references - LSP" })
-vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader>fw", require("telescope.builtin").buffers, { desc = "Telescope find buffer" })
-vim.keymap.set("n", "<leader>fp", require("telescope.builtin").diagnostics, { desc = "Telescope find errors - LSP" })
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope find references - LSP" })
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fw", "<cmd>Telescope buffers<CR>", { desc = "Telescope find buffer" })
+vim.keymap.set("n", "<leader>fe", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope find errors - LSP" })
 vim.keymap.set("n", "<leader>fn", "<cmd>Telescope noice<CR>", { desc = "Telescope browse notifications" })
+vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Telescope view git status" })
 
 -- NeoTree mappings
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
