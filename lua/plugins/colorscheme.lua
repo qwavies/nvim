@@ -60,6 +60,8 @@ return {
 
                -- NotifyBackground = { bg = "#444444" },
 
+               WinSeparator = { fg = "#cfd3ff"},
+
 
                -- -- Override specific syntax groups
                -- ["@variable"] = { fg = colors.text },
