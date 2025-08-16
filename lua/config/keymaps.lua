@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope lsp_references<CR>", { desc = 
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fw", "<cmd>Telescope buffers<CR>", { desc = "Telescope find buffer" })
 vim.keymap.set("n", "<leader>fe", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope find errors - LSP" })
-vim.keymap.set("n", "<leader>fn", "<cmd>Telescope noice<CR>", { desc = "Telescope browse notifications" })
+vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<CR>", { desc = "Telescope browse notifications" })
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Telescope view git status" })
 
 -- NeoTree mappings
@@ -19,6 +19,12 @@ vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoT
 -- move chunks of text up/down within the file
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "move text down by chunk" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "move text up by chunk" })
+
+-- go to next buffer with tab
+vim.keymap.set("n", "<Tab>", "<cmd>bnext<CR>", { desc = "move to next buffer" })
+
+-- clear highlights/search
+vim.keymap.set("n", "<leader>h", "<cmd>noh<CR>", { desc = "clear search highlights" })
 
 -- move down/up the page and recentre the cursor to the middle of the screen
 -- same with search terms, and paragraph
