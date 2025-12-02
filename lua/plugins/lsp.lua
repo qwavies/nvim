@@ -89,7 +89,6 @@ local lazydev = {
 return {
    "mason-org/mason-lspconfig.nvim",
    event = "VeryLazy",
-   -- event = { "BufReadPre", "BufNewFile" },
    opts = {},
    dependencies = {
       mason,
@@ -97,9 +96,23 @@ return {
       lazydev,
    },
    config = function()
+      local on_attach = function(client, bufnr)
+         if client.server_capabilities.inlayHintProvider then
+            vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+         end
+      end
+
       require("mason-lspconfig").setup({
          ensure_installed = autoinstalled_servers,
          automatic_installation = true,
+         handlers = {
+            -- Default handler - applies to all servers
+            function(server_name)
+               require("lspconfig")[server_name].setup({
+                  on_attach = on_attach,
+               })
+            end,
+         },
       })
    end
 }

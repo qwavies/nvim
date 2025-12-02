@@ -10,6 +10,10 @@ vim.opt.undofile = true
 -- number of lines away from bottom/top of the page from the cursor
 vim.opt.scrolloff = 6
 
+-- enable line wrapping
+vim.opt.wrap = true
+vim.opt.linebreak = true
+
 -- links nvim clipboard with system clipboard
 vim.opt.clipboard = "unnamedplus"
 
@@ -20,12 +24,15 @@ vim.opt.tabstop = tab_size
 vim.opt.shiftwidth = tab_size
 vim.opt.softtabstop = tab_size
 
--- case insensitive search with "/"
+-- smart case search with "/"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- disables annoying swap
 vim.opt.swapfile = false
+
+-- gives a visualisation for text replacement ":%s/<TEXT>/<REPLACEMENT>/<MODIFIERS>"
+vim.opt.inccommand = "split"
 
 -- replaces the "~" on left sidebar with nothing
 vim.opt.fillchars = { eob = " " }
@@ -34,6 +41,9 @@ vim.opt.fillchars = { eob = " " }
 vim.opt.cmdheight = 0
 vim.opt.showmode = false
 
+-- load custom colorscheme
+require("config.colorscheme")
+
 -- start lazy (and all other plugins)
 require("config.lazy")
 
@@ -41,9 +51,4 @@ require("config.lazy")
 vim.schedule(function()
    require("config.keymaps")
    require("config.autocmds")
-
-   -- disables auto-commenting
-   -- BUG: seems to not work after buffer change (LSP problem maybe??)
-   vim.opt.formatoptions:remove({ 'r', 'o' })
 end)
-

@@ -10,8 +10,6 @@ return {
                stages = "static", -- fade, slide, static
                timeout = 3500, -- ms
                merge_duplicates = true,
-
-               background_colour = "#444444",
                -- background_colour = "normal",
 
                icons = {

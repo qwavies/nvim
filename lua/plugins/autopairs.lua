@@ -2,5 +2,7 @@ return {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     config = true,
-    opts = {},
+    opts = {
+       map_bs = false
+    },
 }

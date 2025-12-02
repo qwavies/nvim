@@ -11,10 +11,16 @@ vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Tele
 vim.keymap.set("n", "<leader>fw", "<cmd>Telescope buffers<CR>", { desc = "Telescope find buffer" })
 vim.keymap.set("n", "<leader>fe", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope find errors - LSP" })
 vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<CR>", { desc = "Telescope browse notifications" })
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope browse help menu (:h)" })
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Telescope view git status" })
 
 -- NeoTree mappings
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
+
+-- Toggle LSP inlay hints
+vim.keymap.set("n", "<leader>l", function()
+   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "Toggle LSP inlay hints" })
 
 -- move chunks of text up/down within the file
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "move text down by chunk" })
@@ -49,8 +55,3 @@ vim.keymap.set("n", "D", "<nop>", { desc = "" })
 
 -- disables the wretched Q
 vim.keymap.set("n", "Q", "<nop>", { desc = "" })
-
--- exit insert mode using "jk"
--- vim.keymap.set("i", "jk", "<ESC>", { desc = "exit insert mode" })
-
--- TODO: Add smart backspace that removes all whitespace behind it (like in intellij)

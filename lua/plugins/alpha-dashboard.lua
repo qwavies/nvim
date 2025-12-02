@@ -18,12 +18,13 @@ return {
     }
 
     dashboard.section.buttons.val = {
-      dashboard.button("i", "   > New File", "<cmd>ene<CR>"),
+      dashboard.button("i",       "   > New File", "<cmd>ene<CR>i"),
       dashboard.button("SPC f f", "   > Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("SPC f r", "   > Recent Files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("SPC f g", "   > Live Grep", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("u", "   > Update Plugins", "<cmd>Lazy sync<CR>"),
-      dashboard.button("q", "   > Quit", "<cmd>qa<CR>"),
+      dashboard.button("SPC n",   "   > Open File Manager (Yazi)", "<cmd>Yazi<CR>"),
+      dashboard.button("u",       "   > Update Plugins", "<cmd>Lazy sync<CR>"),
+      dashboard.button("q",       "   > Quit", "<cmd>qa<CR>"),
     }
 
     dashboard.config.layout = {
