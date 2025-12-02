@@ -35,6 +35,8 @@ TODO
   - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline) (Command Line support)
 - [comment.nvim](https://github.com/numToStr/Comment.nvim) (Auto-comment toggle)
 - [smart-backspace.nvim](https://github.com/qwavies/smart-backspace.nvim) (Hey, I made this one! Check it out :grin:)
+
+### Additional Info
 - [crates.nvim](https://github.com/saecki/crates.nvim) (Shows latest versions of rust crates)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) (Shows git diffs in the number lines)
 
@@ -44,7 +46,7 @@ TODO
 - [marko.nvim](https://github.com/developedbyed/marko.nvim) (More responsive marks)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (Simplistic file tree)
 - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) (Support for [Yazi](https://yazi-rs.github.io/) file manager)
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (Fuzzy finder/Picker)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (Fuzzy-finder/picker)
 
 ### Aesthetics
 
