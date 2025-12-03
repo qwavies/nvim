@@ -26,6 +26,9 @@ end, { desc = "Toggle LSP inlay hints" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "move text down by chunk" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "move text up by chunk" })
 
+-- go to definition using LSP
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition using LSP" })
+
 -- go to next buffer with tab
 vim.keymap.set("n", "<Tab>", "<cmd>bnext<CR>", { desc = "move to next buffer" })
 
