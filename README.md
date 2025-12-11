@@ -59,6 +59,7 @@ TODO
 - [noice.nvim](https://github.com/folke/noice.nvim) (Non-invasive notifications)
 - [smear-cursor.nvim](https://github.com/sphamba/smear-cursor.nvim) (Large jumps leaves a trail for better visibility)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) (Highlights TODOs, BUGs, etc.)
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) (Better markdown rendering)
 
 ### LSP and Treesitter
 
@@ -68,5 +69,4 @@ TODO
 - [lazydev.nvim](https://github.com/folke/lazydev.nvim) (Configures the LuaLS LSP for Neovim development)
 - [tree-sitter](https://github.com/tree-sitter/tree-sitter) (Better syntax parsing)
     - [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) (Shows current class/function/scope)
-
 

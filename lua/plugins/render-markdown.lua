@@ -3,5 +3,6 @@ return {
    event = { "BufRead *.md" },
    opts = {
       sign = { enabled = false },
+      heading = { icons = false },
    },
 }
