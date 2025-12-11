@@ -27,6 +27,11 @@ return {
                   style = {},
                },
 
+               YankHighlight = {
+                   fg = colors.base,
+                   bg = "#cfd3ff",
+               },
+
                LineNrAbove = { fg = "#BBBBBB" },
                LineNrBelow = { fg = "#BBBBBB" },
                LineNr = {
