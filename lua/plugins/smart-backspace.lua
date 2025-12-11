@@ -1,4 +1,4 @@
 return {
-   "qwavies/smart-backspace.nvim",
-   event = {"InsertEnter", "CmdlineEnter"}
+  "qwavies/smart-backspace.nvim",
+  event = {"InsertEnter", "CmdlineEnter"}
 }

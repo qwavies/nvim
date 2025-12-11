@@ -2,7 +2,7 @@
 -- look into installing nvim-dap-ui
 
 local daps = {
-   "codelldb",
+  "codelldb",
 }
 
 return {}

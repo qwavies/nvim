@@ -1,12 +1,12 @@
 return {
-   "catgoose/nvim-colorizer.lua",
-   event = "VeryLazy",
-   opts = {
-      user_default_options = {
-         names = false,
-         rgb_fn = true,
-      }
-   },
+  "catgoose/nvim-colorizer.lua",
+  event = "VeryLazy",
+  opts = {
+    user_default_options = {
+      names = false,
+      rgb_fn = true,
+    }
+  },
 }
 
 -- NOTE: should colorize :)

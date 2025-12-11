@@ -16,9 +16,9 @@ local M = {}
 
 
 local function apply_color(name, val)
-   if toggled then
-      vim.api.nvim_set_hl(0, name, val)
-   end
+  if toggled then
+    vim.api.nvim_set_hl(0, name, val)
+  end
 end
 
 -- NOTE: catppuccin frappe colors
@@ -70,15 +70,15 @@ apply_color("PmenuBorder", { bg = highlight })
 
 -- Comments
 apply_color("Comment", {
-   fg = unselected,
-   bg = comment_bg,
-   -- italic = true,
+  fg = unselected,
+  bg = comment_bg,
+  -- italic = true,
 })
 
 -- Visual Selection
 apply_color("Visual", {
-   bg = visual_bg,
-   -- bold = true,
+  bg = visual_bg,
+  -- bold = true,
 })
 
 -- Matching Bracket
@@ -149,38 +149,38 @@ apply_color("@constructor", { fg = subtext0 })
 
 -- Lualine
 function M.get_lualine_colorscheme()
-   return {
-      normal = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      },
-      insert = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      },
-      visual = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      },
-      replace = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      },
-      command = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      },
-      inactive = {
-         a = { fg = surface0, bg = blue, gui = "bold" },
-         b = { fg = blue, bg = surface0 },
-         c = { fg = text }
-      }
-   }
+  return {
+    normal = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    },
+    insert = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    },
+    visual = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    },
+    replace = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    },
+    command = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    },
+    inactive = {
+      a = { fg = surface0, bg = blue, gui = "bold" },
+      b = { fg = blue, bg = surface0 },
+      c = { fg = text }
+    }
+  }
 end
 
 return M

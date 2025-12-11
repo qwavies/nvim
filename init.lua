@@ -17,8 +17,9 @@ vim.opt.linebreak = true
 -- links nvim clipboard with system clipboard
 vim.opt.clipboard = "unnamedplus"
 
--- set tabs to 3 spaces
-local tab_size = 3
+-- set default tabs to 4 spaces
+-- will be overriden if a specific file type is read from ./ftplugin
+local tab_size = 4
 vim.opt.expandtab = true
 vim.opt.tabstop = tab_size
 vim.opt.shiftwidth = tab_size
@@ -49,6 +50,6 @@ require("config.lazy")
 
 -- source after everything else
 vim.schedule(function()
-   require("config.keymaps")
-   require("config.autocmds")
+  require("config.keymaps")
+  require("config.autocmds")
 end)

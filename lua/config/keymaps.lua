@@ -19,7 +19,7 @@ vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoT
 
 -- Toggle LSP inlay hints
 vim.keymap.set("n", "<leader>l", function()
-   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end, { desc = "Toggle LSP inlay hints" })
 
 -- move chunks of text up/down within the file
@@ -49,8 +49,8 @@ vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "paste without overwriting cu
 
 -- replaces the currently selected word in the entire file
 vim.keymap.set(
-   "n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-   { desc = "replace selected word in the entire file" }
+  "n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "replace selected word in the entire file" }
 )
 
 -- disables capital D
