@@ -1,7 +1,8 @@
 return {
-  'developedbyed/marko.nvim',
+  "developedbyed/marko.nvim",
+  event = "VeryLazy",
   config = function()
-    require('marko').setup({
+    require("marko").setup({
       border = "rounded",
       title = "  Jump to:  ",
 
