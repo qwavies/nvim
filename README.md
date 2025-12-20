@@ -23,6 +23,27 @@ TODO
 2. Clone this repo into your system
     - `git clone https://github.com/qwavies/nvim NEOVIM_CONFIG_PATH`
 
+## Config Structure
+
+```
+~/.config/nvim
+├── lua
+│   ├── config
+│   │   ├── lazy.lua (where lazy.nvim is loaded)
+│   │   ├── autocmds.lua (put autocommands here)
+│   │   └── keymaps.lua (put keymaps here)
+│   └── plugins
+│       ├── plugin1.lua
+│       ├── plugin2.lua
+│       └── *** (all plugins here are auto-loaded)
+├── ftplugin
+│   ├── markdown.lua
+│   ├── lua.lua
+│   ├── html.lua
+│   └── *** (language-specific settings go here)
+└── init.lua (config entry point)
+```
+
 ## Plugin List
 
 ### Editing Support
