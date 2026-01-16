@@ -1,7 +1,7 @@
 local treesitter = {
   "nvim-treesitter/nvim-treesitter",
   event = "BufEnter",
-  branch = 'master',
+  branch = "master",
   build = ":TSUpdate",
   config = function()
     require("nvim-treesitter.configs").setup({

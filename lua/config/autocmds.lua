@@ -11,6 +11,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.api.nvim_create_autocmd({"BufRead", "LspAttach"}, {
   desc = "Disables autocommenting",
   callback = function()
-    vim.opt.formatoptions:remove({ 'r', 'o' })
+    vim.opt.formatoptions:remove({ "r", "o" })
   end,
 })
