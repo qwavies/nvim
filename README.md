@@ -49,6 +49,7 @@ TODO
 ### Editing Support
 
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) (Auto-close brackets)
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) (Auto-renames closing tags)
 - [cmp](https://github.com/hrsh7th/nvim-cmp) (Autocomplete suggestions)
   - [cmp-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) (LSP support)
   - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer) (Pre-existing word support)
@@ -64,7 +65,7 @@ TODO
 ### Navigation
 
 - [flash.nvim](https://github.com/folke/flash.nvim) (Instantly jump to anywhere in a buffer)
-- [marko.nvim](https://github.com/developedbyed/marko.nvim) (More responsive marks)
+- [marko.nvim](https://github.com/developedbyed/marko.nvim) (More responsive and visual marks)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) (Simplistic file tree)
 - [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) (Support for [Yazi](https://yazi-rs.github.io/) file manager)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (Fuzzy-finder/picker)
