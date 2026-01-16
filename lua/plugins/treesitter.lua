@@ -21,6 +21,7 @@ local treesitter = {
         "html",
         "css",
         "json",
+        "jsonc",
         "toml",
         "bash",
         "markdown",
