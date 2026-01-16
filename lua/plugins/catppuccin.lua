@@ -85,6 +85,12 @@ return {
             fg = "#CE272A",
             style = { "bold" },
           },
+
+          CmpGhostText = {
+            fg = "#BBBBBB",
+            -- bg = "#606060",
+            style = {},
+          }
         }
       end,
     })
