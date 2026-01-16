@@ -18,12 +18,17 @@ local autoinstalled_servers = {
   -- "jdtls",
 
   -- html
-  "html",
+  "html-lsp",
 
   -- css
   "cssls",
   -- "tailwindcss"
 
+  -- json
+  "json-lsp",
+
+  -- toml
+  "taplo",
 }
 
 -- NOTE: NVChad-esque diagnostics
