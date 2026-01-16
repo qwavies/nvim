@@ -15,7 +15,7 @@ local autoinstalled_servers = {
   "rust_analyzer",
 
   -- java
-  "jdtls",
+  -- "jdtls",
 
   -- html
   "html",
