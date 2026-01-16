@@ -62,7 +62,6 @@ return {
             fg = colors.green,
             style = { "bold" },
           },
-
           GitSignsChangeNr = {
             fg = colors.peach,
             style = { "bold" },
@@ -71,12 +70,10 @@ return {
             fg = colors.red,
             style = { "bold" },
           },
-
           GitSignsStagedAddNr = {
             fg = "#66A23F",
             style = { "bold" },
           },
-
           GitSignsStagedChangeNr = {
             fg = "#E56424",
             style = { "bold" },
