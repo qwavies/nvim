@@ -17,6 +17,9 @@ local autoinstalled_servers = {
   -- java
   -- "jdtls",
 
+  -- javascript/typescript
+  -- "ts_ls",
+
   -- html
   "html",
 
@@ -24,11 +27,26 @@ local autoinstalled_servers = {
   "cssls",
   -- "tailwindcss"
 
+  -- bash
+  "bashls",
+
+  -- markdown
+  "marksman",
+
   -- json
   "jsonls",
 
   -- toml
   "taplo",
+
+  -- yaml
+  "yamlls",
+
+  -- docker
+  -- "dockerls",
+
+  -- cmake
+  -- "cmake",
 }
 
 -- NOTE: NVChad-esque diagnostics
