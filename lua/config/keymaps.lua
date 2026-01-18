@@ -33,7 +33,8 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition usi
 vim.keymap.set("n", "<Tab>", "<cmd>bnext<CR>", { desc = "move to next buffer" })
 
 -- clear highlights/search
-vim.keymap.set("n", "<leader>h", "<cmd>noh<CR>", { desc = "clear search highlights" })
+vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "clear search highlights" })
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "clear search highlights" })
 
 -- move down/up the page and recentre the cursor to the middle of the screen
 -- same with search terms, and paragraph
