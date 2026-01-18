@@ -81,7 +81,7 @@ TODO
 - [noice.nvim](https://github.com/folke/noice.nvim) (Non-invasive notifications)
 - [smear-cursor.nvim](https://github.com/sphamba/smear-cursor.nvim) (Large jumps leaves a trail for better visibility)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) (Highlights TODOs, BUGs, etc.)
-- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) (Better markdown rendering)
+- [markview.nvim](https://github.com/OXY2DEV/markview.nvim) (Better markdown rendering)
 
 ### LSP and Treesitter
 
