@@ -20,6 +20,12 @@ vim.keymap.set("n", "\\", "<cmd>Lazy<CR>", { desc = "Opens lazy plugin manager" 
 -- Open Mason LSP manager
 vim.keymap.set("n", "|", "<cmd>Mason<CR>", { desc = "Opens Mason LSP manager" })
 
+-- Show documentation
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP hover documentation"})
+
+-- Show LSP diagnostic
+vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float, { desc = "Show LSP diagnostic (float)"})
+
 -- Toggle LSP inlay hints
 vim.keymap.set("n", "<leader>l", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
