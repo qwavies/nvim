@@ -14,9 +14,6 @@ vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<CR>", { desc = "Telesco
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope browse help menu (:h)" })
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Telescope view git status" })
 
--- NeoTree mappings
-vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
-
 -- Open lazy.nvim plugin manager
 vim.keymap.set("n", "\\", "<cmd>Lazy<CR>", { desc = "Opens lazy plugin manager" })
 
