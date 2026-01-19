@@ -17,6 +17,12 @@ vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Tel
 -- NeoTree mappings
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Opens NeoTree" })
 
+-- Open lazy.nvim plugin manager
+vim.keymap.set("n", "\\", "<cmd>Lazy<CR>", { desc = "Opens lazy plugin manager" })
+
+-- Open Mason LSP manager
+vim.keymap.set("n", "|", "<cmd>Mason<CR>", { desc = "Opens Mason LSP manager" })
+
 -- Toggle LSP inlay hints
 vim.keymap.set("n", "<leader>l", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
