@@ -1,6 +1,6 @@
 return {
   "OXY2DEV/markview.nvim",
-  lazy = false,
+  event = "BufRead *.md",
   opts = {
     markdown = {
       code_blocks = { sign = false },
