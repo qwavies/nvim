@@ -4,6 +4,14 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
     require("telescope").setup({
+      pickers = {
+        colorscheme = {
+          enable_preview = true,
+        },
+        find_files = {
+          hidden = true,
+        },
+      },
       defaults = {
         -- initial_mode = "normal",
         mappings = {
