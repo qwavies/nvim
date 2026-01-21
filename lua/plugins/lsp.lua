@@ -75,64 +75,50 @@ vim.diagnostic.config({
 
 local mason = {
   "mason-org/mason.nvim",
-  opts = {
-    ui = {
-      icons = {
-        package_installed = "✓",
-        package_pending = "➜",
-        package_uninstalled = "✗"
-      }
-    },
-  }
+  opts = {},
 }
 
 local lspconfig = {
   "neovim/nvim-lspconfig",
-  config = function()
-    -- TODO: look more into this idk if needed
-    -- require("lspconfig").lua_ls.setup{}
-  end
 }
 
 local lazydev = {
   "folke/lazydev.nvim",
-  ft = "lua", -- only load on lua files
+  ft = "lua",
   opts = {
     library = {
-      -- See the configuration section for more details
-      -- Load luvit types when the `vim.uv` word is found
       { path = "${3rd}/luv/library", words = { "vim%.uv" } },
     },
   },
 }
 
-return {
-  "mason-org/mason-lspconfig.nvim",
-  event = "VeryLazy",
-  opts = {},
-  dependencies = {
-    mason,
-    lspconfig,
-    lazydev,
-  },
-  config = function()
-    local on_attach = function(client, bufnr)
-      if client.server_capabilities.inlayHintProvider then
-        vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+local mason_lspconfig = {
+    "mason-org/mason-lspconfig.nvim",
+    event = "VeryLazy",
+    dependencies = { mason, lspconfig },
+    config = function()
+      local on_attach = function(client, bufnr)
+        if client.server_capabilities.inlayHintProvider then
+          vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+        end
       end
-    end
 
-    require("mason-lspconfig").setup({
-      ensure_installed = autoinstalled_servers,
-      automatic_installation = true,
-      handlers = {
-        -- Default handler - applies to all servers
-        function(server_name)
-          require("lspconfig")[server_name].setup({
-            on_attach = on_attach,
-          })
-        end,
-      },
-    })
-  end
+      require("mason-lspconfig").setup({
+        ensure_installed = autoinstalled_servers,
+        automatic_installation = true,
+        handlers = {
+          -- Default handler - applies to all servers
+          function(server_name)
+            require("lspconfig")[server_name].setup({
+              on_attach = on_attach,
+            })
+          end,
+        },
+      })
+    end
+  }
+
+return {
+  lazydev,
+  mason_lspconfig
 }
