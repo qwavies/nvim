@@ -87,7 +87,12 @@ return {
             fg = "#BBBBBB",
             -- bg = "#606060",
             style = {},
-          }
+          },
+          BlinkCmpGhostText = {
+            fg = "#BBBBBB",
+            -- bg = "#606060",
+            style = {},
+          },
         }
       end,
     })
