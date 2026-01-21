@@ -14,6 +14,8 @@ return {
       },
       defaults = {
         -- initial_mode = "normal",
+
+        file_ignore_patterns = { "^.git/" },
         mappings = {
           i = {
             ["qq"] = require("telescope.actions").close,
