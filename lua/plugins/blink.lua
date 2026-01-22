@@ -52,7 +52,7 @@ return {
         documentation = {
           auto_show  = true,
           auto_show_delay_ms = 0,
-          treesitter_highlighting = false,
+          treesitter_highlighting = true, -- disable if there is too much CPU usage
         },
         menu = {
           draw = {
