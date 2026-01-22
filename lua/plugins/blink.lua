@@ -23,7 +23,7 @@ return {
           buffer = {
             min_keyword_length = 1,
             max_items = 20,
-            score_offset = -2,
+            score_offset = -3,
           },
           lsp = {
             fallbacks = {} -- stops buffer suggestions from not showing up when there are lsp suggestions
