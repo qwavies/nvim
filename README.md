@@ -32,7 +32,19 @@
 
 ## Requirements
 
-- Neovim 0.11.0 or higher
+- `Neovim 0.11.0+`
+- Any `Nerd Font`
+- `git`
+- `tar`
+- `curl`
+- `yazi` (for [yazi.nvim](https://github.com/mikavilpas/yazi.nvim))
+- `ripgrep` (**OPTIONAL:** for better live grep)
+- `fd` (**OPTIONAL:** for better file search)
+- `tree-sitter-cli 0.26.1+`
+- Any `c compiler`
+- `npm` (for some LSPs)
+
+
 
 ## Installation
 
