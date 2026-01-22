@@ -1,7 +1,34 @@
-<h1 align="center">The qwavies Neovim Config</h1>
+<h1 align="center">My Neovim Config</h1>
 
 ## Showcase
-TODO
+<details>
+    <summary>Splashscreen/Greeter</summary>
+    <img width="1920" height="1080" alt="splashscreen" src="https://github.com/user-attachments/assets/6cd65809-e579-4c25-b7d2-a466b9483ea0" />
+</details>
+<details>
+    <summary>File Preview</summary>
+    <img width="1920" height="1080" alt="lua-file" src="https://github.com/user-attachments/assets/f7fef401-1534-49c3-95fd-cbb24b966f26" />
+    <img width="1920" height="1080" alt="rust-file" src="https://github.com/user-attachments/assets/31f84a32-91e6-4a08-984f-d925fbf300af" />
+</details>
+<details>
+    <summary>Telescope</summary>
+    <img width="1920" height="1080" alt="telescope-find-files" src="https://github.com/user-attachments/assets/df3c41fe-fac3-480b-bba8-c7e20ff90fcb" />
+    <img width="1920" height="1079" alt="telescope-live-grep" src="https://github.com/user-attachments/assets/a3166292-17f8-44a4-9739-5705fc7135d5" />
+</details>
+<details>
+    <summary>Yazi File Manager</summary>
+    <img width="1920" height="1080" alt="yazi" src="https://github.com/user-attachments/assets/2af5102b-5c1d-43d4-b6a6-c6d5d86ada32" />
+    <img width="1920" height="1080" alt="yazi-new-file" src="https://github.com/user-attachments/assets/5b72f4db-7f38-4407-9db2-69ff027a67f9" />
+</details>
+<details>
+    <summary>Auto-complete</summary>
+    <img width="1920" height="1080" alt="blink-cmp" src="https://github.com/user-attachments/assets/e5f9d3d7-b23d-4060-a10e-ec943fc87dfc" />
+    <img width="1920" height="1080" alt="blink-cmp-documentation" src="https://github.com/user-attachments/assets/851f44cd-f148-46a2-b37e-3b61c2369577" />
+</details>
+<details>
+    <summary>Lazy.nvim Start Times</summary>
+    <img width="1920" height="1080" alt="start-time" src="https://github.com/user-attachments/assets/fee9723f-b863-442e-8a55-69109f4db674" />
+</details>
 
 ## Requirements
 
