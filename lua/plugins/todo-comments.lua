@@ -24,7 +24,7 @@ return {
     highlight = {
       multiline = true,
       multiline_pattern = "^.",
-      pattern = [[.*<(KEYWORDS)\s*:?]],
+      pattern = [[.*<(KEYWORDS)\s*:]],
       comments_only = true,
       exclude = {}, -- list of file types to exclude highlighting
     },
@@ -37,7 +37,7 @@ return {
         "--line-number",
         "--column",
       },
-      pattern = [[\b(KEYWORDS):?]],
+      pattern = [[\b(KEYWORDS):]],
       -- pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon. You'll likely get false positives
     },
   }
