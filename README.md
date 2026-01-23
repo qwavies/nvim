@@ -90,7 +90,6 @@
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) (Auto-close brackets)
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) (Auto-renames closing tags)
 - [blink.cmp](https://github.com/saghen/blink.cmp) (Autocomplete suggestions)
-- [comment.nvim](https://github.com/numToStr/Comment.nvim) (Auto-comment toggle)
 - [smart-backspace.nvim](https://github.com/qwavies/smart-backspace.nvim) (Hey, I made this one! Check it out :grin:)
 
 ### Additional Info
