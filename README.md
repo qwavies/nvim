@@ -17,7 +17,7 @@
 </details>
 <details>
     <summary>Notifications</summary>
-    <img width="1920" height="1079" alt="notification" src="https://github.com/user-attachments/assets/26159cbf-55db-49ac-92da-77483c852013" />
+    <img width="1920" height="1080" alt="notification" src="https://github.com/user-attachments/assets/651ee9ee-36df-4f27-9562-974d75a9a1cf" />
 </details>
 <details>
     <summary>Yazi File Manager</summary>
