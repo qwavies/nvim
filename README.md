@@ -6,7 +6,7 @@
     <img width="1920" height="1080" alt="splashscreen" src="https://github.com/user-attachments/assets/6cd65809-e579-4c25-b7d2-a466b9483ea0" />
 </details>
 <details>
-    <summary>File Preview</summary>
+    <summary>General File Preview</summary>
     <img width="1920" height="1080" alt="lua-file" src="https://github.com/user-attachments/assets/f7fef401-1534-49c3-95fd-cbb24b966f26" />
     <img width="1920" height="1080" alt="rust-file" src="https://github.com/user-attachments/assets/31f84a32-91e6-4a08-984f-d925fbf300af" />
 </details>
@@ -14,6 +14,10 @@
     <summary>Telescope</summary>
     <img width="1920" height="1080" alt="telescope-find-files" src="https://github.com/user-attachments/assets/df3c41fe-fac3-480b-bba8-c7e20ff90fcb" />
     <img width="1920" height="1079" alt="telescope-live-grep" src="https://github.com/user-attachments/assets/a3166292-17f8-44a4-9739-5705fc7135d5" />
+</details>
+<details>
+    <summary>Notifications</summary>
+    <img width="1920" height="1079" alt="notification" src="https://github.com/user-attachments/assets/26159cbf-55db-49ac-92da-77483c852013" />
 </details>
 <details>
     <summary>Yazi File Manager</summary>
