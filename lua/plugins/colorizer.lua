@@ -5,6 +5,10 @@ return {
     user_default_options = {
       names = false,
       rgb_fn = true,
+
+      mode = "virtualtext",
+      virtualtext = "",
+      virtualtext_inline = "before",
     }
   },
 }
