@@ -55,6 +55,7 @@ return {
             fg = "#BBBBBB",
             bg = "#606060",
           },
+          DiagnosticUnnecessary = { fg = colors.overlay1 },
 
           TreesitterContextBottom = { style = {} },
 
