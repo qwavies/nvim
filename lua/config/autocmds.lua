@@ -57,7 +57,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
         filename
       )
 
-      vim.notify(message, vim.log.levels.INFO, { timeout = 1500 })
+      vim.notify(message, vim.log.levels.INFO)
     end)
   end,
 })
