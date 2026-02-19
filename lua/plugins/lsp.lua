@@ -3,7 +3,8 @@ local autoinstalled_servers = {
   -- Will be installed automatically
 
   -- lua
-  "lua_ls",
+  -- "lua_ls",
+  "lua_ls@3.16.4", -- WARN: downgrade as latest luaLS version does not index lazydev properly
 
   -- python
   "pyright",
