@@ -94,6 +94,10 @@ return {
             -- bg = "#606060",
             style = {},
           },
+
+          ["@keyword.operator"] = {
+            fg = colors.teal
+          }
         }
       end,
     })
