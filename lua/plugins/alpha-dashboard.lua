@@ -18,7 +18,7 @@ return {
     }
 
     dashboard.section.buttons.val = {
-      dashboard.button("i",       "   > New File", "<cmd>ene<CR>i"),
+      dashboard.button("i",       "   > New File", "<cmd>enew<CR>i"),
       dashboard.button("SPC f f", "   > Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("SPC f r", "   > Recent Files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("SPC f g", "   > Live Grep", "<cmd>Telescope live_grep<CR>"),
