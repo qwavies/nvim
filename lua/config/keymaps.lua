@@ -43,7 +43,17 @@ vim.keymap.set("n", "<Tab>", "<cmd>bnext<CR>", { desc = "move to next buffer" })
 
 -- clear highlights/search
 vim.keymap.set("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "clear search highlights" })
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "clear search highlights" })
+
+-- escape to get rid of documentation and highlights
+vim.keymap.set("n", "<Esc>", function()
+  vim.cmd.nohlsearch()
+
+  for _, window in ipairs(vim.api.nvim_list_wins()) do
+    if vim.api.nvim_win_get_config(window).relative ~= "" then
+      vim.api.nvim_win_close(window, false)
+    end
+  end
+end, { desc = "clear search highlights" })
 
 -- comment line/selection
 vim.keymap.set("n", "<leader>/", "gcc", { remap = true, desc = "comment out line" })
