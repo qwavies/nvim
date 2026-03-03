@@ -53,11 +53,14 @@ vim.keymap.set("n", "<Esc>", function()
       vim.api.nvim_win_close(window, false)
     end
   end
-end, { desc = "clear search highlights" })
+end, { desc = "clear floating windows and search highlights" })
 
 -- comment line/selection
 vim.keymap.set("n", "<leader>/", "gcc", { remap = true, desc = "comment out line" })
 vim.keymap.set("v", "<leader>/", "gc", { remap = true, desc = "comment out selection" })
+
+-- up arrow to go to previous command
+vim.keymap.set("n", "<Up>", ":<Up>", { noremap = true, desc = "Show previous command"})
 
 -- move down/up the page and recentre the cursor to the middle of the screen
 -- same with search terms, and paragraph
