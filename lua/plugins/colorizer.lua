@@ -2,23 +2,38 @@ return {
   "catgoose/nvim-colorizer.lua",
   event = "BufReadPre",
   opts = {
-    user_default_options = {
-      names = false,
-      rgb_fn = true,
+    options = {
 
-      mode = "virtualtext",
-      virtualtext = "",
-      virtualtext_inline = "before",
+      parsers = {
+        names = { enable = false },
+        hex = { default = true },
+        css_fn = true,
+        tailwind = {
+          enable = true,
+          lsp = true,
+          update_names = true,
+        }
+      },
+
+      display = {
+        mode = "virtualtext",
+        virtualtext = {
+          char = "",
+          position = "before",
+        }
+      }
+
     }
   },
 }
 
--- NOTE: should colorize :)
+-- should colorize :)
 -- "#000000"
 -- "#ffffff"
 -- "#cfd3ff"
+-- rgb(255, 0, 0)
 
--- NOTE: shouldn't colorize bc random colors might show up in a non CSS setting or something similar
+-- shouldn't colorize bc random colors might show up in a non CSS setting or something similar
 -- "White"
 -- "blue"
 -- "Red"
