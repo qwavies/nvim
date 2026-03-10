@@ -63,12 +63,14 @@ vim.diagnostic.config({
     end,
 
     spacing = 2,
+    source = false,
+    virt_text_pos = "eol",
   },
-  signs = false,
+  signs = false, -- removes sign column
   underline = true,
   update_in_insert = false,
   severity_sort = true,
-  float = {
+  float = { -- for checking with vim.diagnostic.open_float (bound to <C-k>)
     border = nil,
     source = true,
   }
