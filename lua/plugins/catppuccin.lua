@@ -55,6 +55,12 @@ return {
             fg = "#BBBBBB",
             bg = "#606060",
           },
+
+          DiagnosticVirtualTextError = { style = {} },
+          DiagnosticVirtualTextWarn = { style = {} },
+          DiagnosticVirtualTextInfo = { style = {} },
+          DiagnosticVirtualTextHint = { style = {} },
+
           DiagnosticUnnecessary = { fg = colors.overlay1 },
 
           TreesitterContextBottom = { style = {} },
