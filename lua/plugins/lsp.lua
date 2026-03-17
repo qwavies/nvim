@@ -19,7 +19,7 @@ local autoinstalled_servers = {
   -- "jdtls",
 
   -- javascript/typescript
-  -- "ts_ls",
+  "ts_ls",
 
   -- html
   "html",
