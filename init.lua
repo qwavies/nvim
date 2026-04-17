@@ -57,6 +57,9 @@ end
 -- source autocmds
 require("config.autocmds")
 
+-- source commands
+require("config.commands")
+
 -- source after everything else
 vim.schedule(function()
   -- source keymaps
