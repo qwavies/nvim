@@ -29,14 +29,10 @@
     <img width="1920" height="1080" alt="blink-cmp" src="https://github.com/user-attachments/assets/e5f9d3d7-b23d-4060-a10e-ec943fc87dfc" />
     <img width="1920" height="1080" alt="blink-cmp-documentation" src="https://github.com/user-attachments/assets/851f44cd-f148-46a2-b37e-3b61c2369577" />
 </details>
-<details>
-    <summary>Lazy.nvim Start Times</summary>
-    <img width="1920" height="1080" alt="start-time" src="https://github.com/user-attachments/assets/fee9723f-b863-442e-8a55-69109f4db674" />
-</details>
 
 ## Requirements
 
-- `Neovim 0.11.0+`
+- `Neovim 0.12.0+`
 - Any `Nerd Font`
 - `git`
 - `tar`
@@ -47,8 +43,6 @@
 - `tree-sitter-cli 0.26.1+`
 - Any `c compiler`
 - `npm` (for some LSPs)
-
-
 
 ## Installation
 
@@ -72,7 +66,6 @@
 ~/.config/nvim
 ├── lua
 │   ├── config
-│   │   ├── lazy.lua (where lazy.nvim is loaded)
 │   │   ├── autocmds.lua (put autocommands here)
 │   │   └── keymaps.lua (put keymaps here)
 │   └── plugins
@@ -94,6 +87,7 @@
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) (Auto-close brackets)
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) (Auto-renames closing tags)
 - [blink.cmp](https://github.com/saghen/blink.cmp) (Autocomplete suggestions)
+- [undotree](https://neovim.io/doc/user/plugins/#%3AUndotree) (See past edits in a tree format)
 - [smart-backspace.nvim](https://github.com/qwavies/smart-backspace.nvim) (Hey, I made this one! Check it out :grin:)
 
 ### Additional Info
@@ -126,6 +120,4 @@
 - [mason.nvim](https://github.com/mason-org/mason.nvim) (Package manager for LSPs)
     - [mason-lspconfig.nvim](https://github.com/mason-org/mason-lspconfig.nvim) (Bridge for [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) and [mason.nvim](https://github.com/mason-org/mason.nvim))
 - [lazydev.nvim](https://github.com/folke/lazydev.nvim) (Configures the LuaLS LSP for Neovim development)
-- [tree-sitter](https://github.com/tree-sitter/tree-sitter) (Better syntax parsing)
-    - [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) (Shows current class/function/scope)
-
+- [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) (Shows current class/function/scope)
