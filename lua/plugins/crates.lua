@@ -1,7 +1,5 @@
-return {
-  "saecki/crates.nvim",
-  event = { "BufRead Cargo.toml" },
-  config = function()
-    require("crates").setup()
-  end,
-}
+vim.pack.add({"https://github.com/saecki/crates.nvim"})
+
+require("crates").setup()
+
+--   event = { "BufRead Cargo.toml" },

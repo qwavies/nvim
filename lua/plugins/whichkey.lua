@@ -1,8 +1,6 @@
-return {
-  "folke/which-key.nvim",
-  event = "VeryLazy",
-  opts = {
-    preset = "helix",
-    delay = 500,
-  },
-}
+vim.pack.add({"https://github.com/folke/which-key.nvim"})
+
+require("which-key").setup({
+  preset = "helix",
+  delay = 500,
+})

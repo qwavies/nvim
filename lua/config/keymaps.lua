@@ -14,17 +14,26 @@ vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<CR>", { desc = "Telesco
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope browse help menu (:h)" })
 vim.keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Telescope view git status" })
 
--- Open lazy.nvim plugin manager
-vim.keymap.set("n", "\\", "<cmd>Lazy<CR>", { desc = "Opens lazy plugin manager" })
+-- Open Yazi
+vim.keymap.set("n", "<leader>n", "<cmd>Yazi<CR>", { desc = "Open Yazi file manager" })
+
+-- Open Undotree
+vim.keymap.set("n", "<leader>u", "<cmd>Undotree<CR>", { desc = "Open Undotree" })
+
+-- Update all plugins with vim.pack
+vim.keymap.set("n", "\\", function() vim.pack.update() end, { desc = "Update all plugins with vim.pack" })
 
 -- Open Mason LSP manager
 vim.keymap.set("n", "|", "<cmd>Mason<CR>", { desc = "Opens Mason LSP manager" })
 
 -- Show documentation
-vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP hover documentation"})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "LSP hover documentation" })
+
+-- Restart neovim
+vim.keymap.set("n", "<leader>rr", "<cmd>restart<CR>", { desc = "Restart neovim" })
 
 -- Show LSP diagnostic
-vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float, { desc = "Show LSP diagnostic (float)"})
+vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float, { desc = "Show LSP diagnostic (float)" })
 
 -- Toggle LSP inlay hints
 vim.keymap.set("n", "<leader>l", function()
@@ -60,7 +69,7 @@ vim.keymap.set("n", "<leader>/", "gcc", { remap = true, desc = "comment out line
 vim.keymap.set("v", "<leader>/", "gc", { remap = true, desc = "comment out selection" })
 
 -- up arrow to go to previous command
-vim.keymap.set("n", "<Up>", ":<Up>", { noremap = true, desc = "Show previous command"})
+vim.keymap.set("n", "<Up>", ":<Up>", { noremap = true, desc = "Show previous command" })
 
 -- move down/up the page and recentre the cursor to the middle of the screen
 -- same with search terms, and paragraph

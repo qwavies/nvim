@@ -1,13 +1,9 @@
-return {
-  "developedbyed/marko.nvim",
-  event = "VeryLazy",
-  config = function()
-    require("marko").setup({
-      border = "rounded",
-      title = "  Jump to:  ",
+vim.pack.add({"https://github.com/developedbyed/marko.nvim"})
 
-      navigation_mode = "direct",
-      -- navigation_mode = "popup",
-    })
-  end,
-}
+require("marko").setup({
+  border = "rounded",
+  title = "  Jump to:  ",
+
+  navigation_mode = "direct",
+  -- navigation_mode = "popup",
+})

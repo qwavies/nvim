@@ -50,7 +50,12 @@ vim.opt.showmode = false
 -- require("config.colorscheme")
 
 -- start lazy (and all other plugins)
-require("config.lazy")
+-- require("config.lazy")
+
+-- load plugins
+for _, file in ipairs(vim.fn.globpath(vim.fn.stdpath("config") .. "/lua/plugins", "*.lua", false, true)) do
+  dofile(file)
+end
 
 -- source autocmds
 require("config.autocmds")

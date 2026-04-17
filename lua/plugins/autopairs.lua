@@ -1,7 +1,5 @@
-return {
-  "windwp/nvim-autopairs",
-  event = "InsertEnter",
-  opts = {
-    map_bs = false
-  },
-}
+vim.pack.add({"https://github.com/windwp/nvim-autopairs"})
+
+require("nvim-autopairs").setup({
+  map_bs = false,
+})

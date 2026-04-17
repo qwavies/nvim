@@ -1,6 +1,3 @@
-return {
-  "lukas-reineke/indent-blankline.nvim",
-  event = "BufEnter",
-  main = "ibl",
-  opts = {},
-}
+vim.pack.add({"https://github.com/lukas-reineke/indent-blankline.nvim"})
+
+require("ibl").setup()

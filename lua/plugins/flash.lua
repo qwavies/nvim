@@ -1,29 +1,24 @@
-return {
-  "folke/flash.nvim",
-  event = "VeryLazy",
-  opts = {
+vim.pack.add({"https://github.com/folke/flash.nvim"})
 
-    prompt = {
-      prefix = {{ "󱐋 ", "FlashPromptIcon" }},
-    },
+require("flash").setup({
 
-    search = {
-      mode = "fuzzy"
-    },
-
-    highlight = {
-      backdrop = true
-    },
-
-    modes = {
-      char = { jump_labels = true }
-    }
-
+  prompt = {
+    prefix = {{ "󱐋 ", "FlashPromptIcon" }},
   },
 
-  keys = {
-    { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-    { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
-    -- { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+  search = {
+    mode = "fuzzy"
   },
-}
+
+  highlight = {
+    backdrop = true
+  },
+
+  modes = {
+    char = { jump_labels = true }
+  }
+
+})
+
+vim.keymap.set({ "n", "x", "o" }, "s", function() require("flash").jump() end, { desc = "Flash" })
+vim.keymap.set({ "n", "x", "o" }, "S", function() require("flash").treesitter() end, { desc = "Flash Treesitter" })

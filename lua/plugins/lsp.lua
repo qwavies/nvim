@@ -1,3 +1,10 @@
+vim.pack.add({
+  "https://github.com/neovim/nvim-lspconfig",
+  "https://github.com/mason-org/mason.nvim",
+  "https://github.com/mason-org/mason-lspconfig.nvim",
+  "https://github.com/folke/lazydev.nvim",
+})
+
 local autoinstalled_servers = {
   -- NOTE: add new servers here.
   -- Will be installed automatically
@@ -75,60 +82,38 @@ vim.diagnostic.config({
   }
 })
 
-local mason = {
-  "mason-org/mason.nvim",
-  opts = {
-    ui = {
-      icons = {
-        package_installed = "●",
-        package_pending = "●",
-        package_uninstalled = "○",
-      }
+-- helper function for inlay hints
+local on_attach = function(client, bufnr)
+  if client.server_capabilities.inlayHintProvider then
+    vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+  end
+end
+
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "●",
+      package_pending = "●",
+      package_uninstalled = "○",
     }
-  },
-}
-
-local lspconfig = {
-  "neovim/nvim-lspconfig",
-}
-
-local lazydev = {
-  "folke/lazydev.nvim",
-  ft = "lua",
-  opts = {
-    library = {
-      { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-    },
-  },
-}
-
-local mason_lspconfig = {
-    "mason-org/mason-lspconfig.nvim",
-    event = "VeryLazy",
-    dependencies = { mason, lspconfig },
-    config = function()
-      local on_attach = function(client, bufnr)
-        if client.server_capabilities.inlayHintProvider then
-          vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
-        end
-      end
-
-      require("mason-lspconfig").setup({
-        ensure_installed = autoinstalled_servers,
-        automatic_installation = true,
-        handlers = {
-          -- Default handler - applies to all servers
-          function(server_name)
-            require("lspconfig")[server_name].setup({
-              on_attach = on_attach,
-            })
-          end,
-        },
-      })
-    end
   }
+})
 
-return {
-  lazydev,
-  mason_lspconfig
-}
+require("mason-lspconfig").setup({
+  ensure_installed = autoinstalled_servers,
+  automatic_installation = true,
+  handlers = {
+    -- Default handler - applies to all servers
+    function(server_name)
+      require("lspconfig")[server_name].setup({
+        on_attach = on_attach,
+      })
+    end,
+  },
+})
+
+require("lazydev").setup({
+  library = {
+    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+  },
+})
