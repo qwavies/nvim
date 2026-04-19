@@ -1,5 +1,9 @@
 vim.pack.add({"https://github.com/saecki/crates.nvim"})
 
-require("crates").setup()
-
---   event = { "BufRead Cargo.toml" },
+vim.api.nvim_create_autocmd("BufRead", {
+  once = true,
+  pattern = "Cargo.toml",
+  callback = function()
+    require("crates").setup()
+  end
+})
