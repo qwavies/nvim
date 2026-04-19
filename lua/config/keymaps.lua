@@ -21,7 +21,10 @@ vim.keymap.set("n", "<leader>n", "<cmd>Yazi<CR>", { desc = "Open Yazi file manag
 vim.keymap.set("n", "<leader>u", "<cmd>Undotree<CR>", { desc = "Open Undotree" })
 
 -- Update all plugins with vim.pack
-vim.keymap.set("n", "\\", function() vim.pack.update() end, { desc = "Update all plugins with vim.pack" })
+vim.keymap.set("n", "\\", function()
+  vim.notify("Checking for updates...")
+  vim.pack.update()
+end, { desc = "Update all plugins with vim.pack" })
 
 -- Open Mason LSP manager
 vim.keymap.set("n", "|", "<cmd>Mason<CR>", { desc = "Opens Mason LSP manager" })
