@@ -31,6 +31,7 @@ require("nvim-treesitter").install({
   "markdown",
   "markdown_inline",
   "typst",
+  "latex",
   "yaml",
   "sql",
   "xml",
