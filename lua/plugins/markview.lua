@@ -1,16 +1,23 @@
-vim.pack.add({"https://github.com/OXY2DEV/markview.nvim"})
+vim.pack.add({
+  "https://github.com/OXY2DEV/markview.nvim",
+  "https://github.com/nvim-tree/nvim-web-devicons",
+})
 
-vim.api.nvim_create_autocmd("BufRead", {
-  once = true,
-  pattern = "*.md",
-  callback = function()
-    require("markview").setup({
-      markdown = {
-        code_blocks = { sign = false },
-        headings = {
-          enable = false,
-        }
-      },
-    })
-  end
+require("markview").setup({
+  preview = {
+    enable = true,
+    enable_hybrid_mode = true,
+    linewise_hybrid_mode = false,
+    icon_provider = "devicons",
+    filetypes = { "markdown", "typst" },
+    hybrid_modes = { "n" },
+    edit_range = { 0, 0 },
+  },
+
+  markdown = {
+    code_blocks = { sign = false },
+    headings = {
+      enable = false,
+    }
+  },
 })
