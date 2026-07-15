@@ -2,7 +2,7 @@
 -- Different key mappings
 -- -----------------------
 
--- vim.g.mapleader = " "
+vim.g.mapleader = " "
 
 -- Telescope mappings
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Telescope find files" })
