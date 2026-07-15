@@ -47,9 +47,9 @@ vim.opt.cmdheight = 0
 vim.opt.showmode = false
 
 -- enable ui2
-require("vim._core.ui2").enable({
-  enable = true,
-})
+-- require("vim._core.ui2").enable({
+--   enable = true,
+-- })
 
 -- load custom colorscheme
 -- require("config.colorscheme")
