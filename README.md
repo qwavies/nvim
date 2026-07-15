@@ -120,4 +120,5 @@
 - [mason.nvim](https://github.com/mason-org/mason.nvim) (Package manager for LSPs)
     - [mason-lspconfig.nvim](https://github.com/mason-org/mason-lspconfig.nvim) (Bridge for [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) and [mason.nvim](https://github.com/mason-org/mason.nvim))
 - [lazydev.nvim](https://github.com/folke/lazydev.nvim) (Configures the LuaLS LSP for Neovim development)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) (Better syntax highlighting)
 - [tree-sitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context) (Shows current class/function/scope)
