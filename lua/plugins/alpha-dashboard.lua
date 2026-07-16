@@ -7,14 +7,14 @@ local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
 dashboard.section.header.val = {
-  "                                                     ",
-  "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
-  "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
-  "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
-  "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
-  "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
-  "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
-  "                                                     ",
+  [[                                                     ]],
+  [[  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ]],
+  [[  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ]],
+  [[  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ]],
+  [[  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ]],
+  [[  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ]],
+  [[  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ]],
+  [[                                                     ]],
 }
 
 dashboard.section.buttons.val = {
@@ -40,6 +40,12 @@ dashboard.section.header.opts.hl = "Function"
 dashboard.section.buttons.opts.hl = "Function"
 dashboard.section.footer.opts.hl = "Function"
 
-vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("HighlightOnYank", { clear = true }),
+  pattern = "alpha",
+  callback = function()
+    vim.opt_local.foldenable = false
+  end,
+})
 
 alpha.setup(dashboard.config)
